@@ -4,8 +4,6 @@
  * | Gerardo Anglada - A01021917                |
  * | 2/Sep/2017                                 |
  * |********************************************/
-package codigosbase;
-
 import java.util.Scanner;
 
 public class chicharronera {

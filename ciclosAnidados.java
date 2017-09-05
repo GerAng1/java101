@@ -4,15 +4,13 @@
  * | Gerardo Anglada - A01021917    |
  * | Mm/dd/2017                     |
  * |********************************/
-package codigosbase;
-
 import java.util.*; //esto es porque uno lee desde el teclado
 
-public class ciclosAnidados { 
+public class ciclosAnidados {
 //declarar todo
 
-      public static void main(String[] args) {  
-        
+      public static void main(String[] args) {
+
         int pez=0,numComida=0; //los contadores para el for
         int numPeces=0; //declarar cuantos peces habrá
         Scanner lectura= new Scanner(System.in);
@@ -22,13 +20,13 @@ public class ciclosAnidados {
         double loquetenemos=0.0; //suma de lo que llevamos de gramos
         int comidasAlDia=0;
         //terminamos de declarar y hay que saber cuantos peces hay
-        
+
         System.out.print("Cuantas veces al dia alimentas a tus peces? ");
         comidasAlDia=lectura.nextInt();
-        
+
         System.out.print("Cuantos peces hay en la pecera?");
         numPeces=lectura.nextInt();
-        
+
 //empezamos los ciclos
         for(pez=0; pez<numPeces; pez++){
             for(numComida=0;numComida<comidasAlDia;numComida++){
@@ -45,6 +43,5 @@ public class ciclosAnidados {
         //para imprimir el valor final de cunto se comieros los peces en la pecera
         System.out.println("Se consumieron en total " +totalGramosComida+ "gramos de comida");
     }//cierre del main
-    
-}//cierre de la clase
 
+}//cierre de la clase

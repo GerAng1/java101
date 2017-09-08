@@ -20,7 +20,7 @@ Scanner lectura = new Scanner(System.in);
  for(cont1=0; cont1<tam; cont1++) {
     for(cont2=0; cont2<=cont1; cont2++){
 
-    System.out.print(" * ");
+    System.out.print(" + ");
 
     }//termina for de altura
     System.out.println();//asi se saltan renglones

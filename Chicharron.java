@@ -25,7 +25,7 @@ public class Chicharron {
 	raiz2=div2;
 
 
-	imprimir();
+	imprimir(raiz1, raiz2);
 
 	}//fin del main
 
@@ -55,8 +55,8 @@ public class Chicharron {
 
 	}
 
-	public static void imprimir(){
+	public static void imprimir(double conMas, double conMenos){
 
-		System.out.printf("Las raices son %.2f y %.2f", raiz1, raiz2);
+		System.out.printf("Las raices son %.2f y %.2f", conMas, conMenos);
 	}
 }

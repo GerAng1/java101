@@ -12,9 +12,13 @@ import java.util.Scanner;
 public class MetodoDos {
 	public static void main (String [] args){
 
-		//Scanner lector = new Scanner (System.in);
+		Scanner lectura = new Scanner (System.in);
+		double valor;
 
-		double numero1= cuadrado(5.0);
+		System.out.print("Que numero quieres al cuadrado?: ");
+		valor=lectura.nextDouble();
+
+		double numero1= cuadrado(valor);
 		System.out.printf("El cuadrado de %f es %f %n", 4.0, cuadrado(4.0));
 		System.out.printf("%.2f %n", numero1);
 	}//fin del main

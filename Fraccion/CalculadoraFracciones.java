@@ -26,7 +26,7 @@ public class CalculadoraFracciones {
         while(err){
             try{
                 System.out.println("Elija la opcion que quieras: ");
-                
+
                 while(selMenu){
                     opcion=lc.nextInt();
                     lc.nextLine();
@@ -81,45 +81,45 @@ public class CalculadoraFracciones {
             }
         }
     }//fin Menu
-    
+
     public static void ansFrac(){
         int num, den;
         boolean err = true;
         Fraccion f;
         Scanner lc = new Scanner(System.in);
-        
+
         while(err){
             try{
                 System.out.println("Teclea los valores del numerador y denominador, "
                         + "separados por un espacio o enter [Ej. -3 4]");
                 num = lc.nextInt();
                 den = lc.nextInt();
-               
-                f = new Fraccion(num, den);                
+
+                f = new Fraccion(num, den);
                 System.out.printf("%d/%d es: %.2f", num, den, f.toDouble());
-                
+
                 err = false;
             }
 
             catch (ArithmeticException ex) {
                 System.err.println("Error: Denominador no puede ser '0'. \n");
                 lc.nextLine();
-            } 
+            }
             catch (InputMismatchException ex) {
                 System.err.println("Error: No puede teclear letras. \n");
                 lc.nextLine();
             }
         }
-        
+
         menu();
     }
-    
+
     public static void sumar(){
         int num, den;
         boolean err = true;
         Fraccion f, otherf;
         Scanner lc = new Scanner(System.in);
-        
+
         while(err){
             try{
                 System.out.println("Teclea los valores del numerador y denominador, "
@@ -137,28 +137,28 @@ public class CalculadoraFracciones {
                 otherf = new Fraccion(num, den);
                 System.out.printf("%s + %s es: %s",
                         f.toString(), otherf.toString(), f.add(otherf).toLowestTerms());
-                
+
                 err = false;
             }
-            
+
             catch (ArithmeticException ex) {
                 System.err.println("Error: Denominador no puede ser '0'. \n");
-            } 
+            }
             catch (InputMismatchException ex) {
                 System.err.println("Error: No puede teclear letras. \n");
                 lc.nextLine();
             }
         }
-        
-        menu(); 
+
+        menu();
     }
-    
+
     public static void restar(){
         int num, den;
         boolean err = true;
         Fraccion f, otherf;
         Scanner lc = new Scanner(System.in);
-        
+
         while(err){
             try{
                 System.out.println("Teclea los valores del numerador y denominador, "
@@ -176,29 +176,29 @@ public class CalculadoraFracciones {
                 otherf = new Fraccion(num, den);
                 System.out.printf("%s - %s es: %s",
                         f.toString(), otherf.toString(), f.substract(otherf).toLowestTerms());
-                
+
                 err = false;
             }
-            
+
             catch (ArithmeticException ex) {
                 System.err.println("Error: Denominador no puede ser '0'. \n");
                 lc.nextLine();
-            } 
+            }
             catch (InputMismatchException ex) {
                 System.err.println("Error: No puede teclear letras. \n");
                 lc.nextLine();
             }
         }
-        
+
         menu();
     }
-    
+
     public static void multiplicar(){
         int num, den;
         boolean err = true;
         Fraccion f, otherf;
         Scanner lc = new Scanner(System.in);
-        
+
         while(err){
             try{
                 System.out.println("Teclea los valores del numerador y denominador, "
@@ -216,29 +216,29 @@ public class CalculadoraFracciones {
                 otherf = new Fraccion(num, den);
                 System.out.printf("%s * %s es: %s",
                         f.toString(), otherf.toString(), f.multiply(otherf).toLowestTerms());
-                
+
                 err = false;
             }
-            
+
             catch (ArithmeticException ex) {
                 System.err.println("Error: Denominador no puede ser '0'. \n");
                 lc.nextLine();
-            } 
+            }
             catch (InputMismatchException ex) {
                 System.err.println("Error: No puede teclear letras. \n");
                 lc.nextLine();
             }
         }
-        
+
         menu();
     }
-    
+
     public static void dividir(){
         int num, den;
         boolean err = true;
         Fraccion f, otherf;
         Scanner lc = new Scanner(System.in);
-        
+
         while(err){
             try{
                 System.out.println("Teclea los valores del numerador y denominador, "
@@ -258,26 +258,26 @@ public class CalculadoraFracciones {
                         f.toString(), otherf.toString(), f.divide(otherf).toLowestTerms());
                 err = false;
             }
-            
+
             catch (ArithmeticException ex) {
                 System.err.println("Error: Denominador no puede ser '0'. \n");
                 lc.nextLine();
-            } 
+            }
             catch (InputMismatchException ex) {
                 System.err.println("Error: No puede teclear letras. \n");
                 lc.nextLine();
             }
         }
-        
+
         menu();
     }
-    
+
     public static void toLowestTerms(){
        int num, den;
        boolean err = true;
        Fraccion f;
        Scanner lc = new Scanner(System.in);
-       
+
        while(err){
             try{
                 System.out.println("Teclea los valores del numerador y denominador "
@@ -285,31 +285,31 @@ public class CalculadoraFracciones {
                 num = lc.nextInt();
                 den = lc.nextInt();
 
-                f = new Fraccion(num, den); 
+                f = new Fraccion(num, den);
                 System.out.println(f.toString() + " es igual a: " + f.toLowestTerms().toString());
-                
+
                 err = false;
             }
-            
+
             catch (ArithmeticException ex) {
                 System.err.println("Error: Denominador no puede ser '0'. \n");
                 lc.nextLine();
-            } 
+            }
             catch (InputMismatchException ex) {
                 System.err.println("Error: No puede teclear letras. \n");
                 lc.nextLine();
             }
        }
-    
+
         menu();
     }
-    
+
     public static void comparar(){
         int num, den;
         boolean err = true;
         Fraccion f, otherf;
         Scanner lc = new Scanner(System.in);
-        
+
         while(err){
             try{
                 System.out.println("Teclea los valores del numerador y denominador, "
@@ -325,35 +325,35 @@ public class CalculadoraFracciones {
                 den = lc.nextInt();
 
                 otherf = new Fraccion(num, den);
-                
+
                 if(f.equals(otherf))
                     System.out.println(f + " y " + otherf + " son equivalentes.");
-                
+
                 else
                     System.out.println(f + " y " + otherf + " no son equivalentes.");
-                
+
                 err = false;
             }
-            
+
             catch (ArithmeticException ex) {
                 System.err.println("Error: Denominador no puede ser '0'. \n");
                 lc.nextLine();
-            } 
+            }
             catch (InputMismatchException ex) {
                 System.err.println("Error: No puede teclear letras. \n");
                 lc.nextLine();
             }
         }
-        
+
         menu();
     }
-    
+
     public static void imprimir(){
         int num, den;
         boolean err = true;
         Fraccion f;
         Scanner lc = new Scanner(System.in);
-        
+
         while(err){
             try{
                 System.out.println("Teclea los valores del numerador y denominador,"
@@ -363,20 +363,20 @@ public class CalculadoraFracciones {
 
                 f = new Fraccion(num, den);
                 System.out.println(f.toString());
-                
+
                 err = false;
             }
-            
+
             catch (ArithmeticException ex) {
                 System.err.println("Error: Denominador no puede ser '0'. \n");
                 lc.nextLine();
-            } 
+            }
             catch (InputMismatchException ex) {
                 System.err.println("Error: No puede teclear letras. \n");
                 lc.nextLine();
             }
         }
-       
+
         menu();
     }
 }//fin clase

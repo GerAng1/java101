@@ -6,7 +6,7 @@
  * |****************************************/
 import java.util.*; //esto es porque uno lee desde el teclado
 
-public class ciclosAnidadosConMetodos {
+public class CiclosAnidadosConMetodos {
   //declaro variables globales
 	static int NUMCOMIDAS=0, TOTALFINAL=0;
 	static int NUMPECES=0;
@@ -16,8 +16,7 @@ public static void main (String[] args){
         capturaGlobal();
         captura();
         imprime();
-
-    }//cierre del main
+}//cierre del main
 
 public static void capturaGlobal(){
     System.out.print("Cuantas veces le das de comer a los peces?: ");

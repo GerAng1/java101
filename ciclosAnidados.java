@@ -6,7 +6,7 @@
  * |********************************/
 import java.util.*; //esto es porque uno lee desde el teclado
 
-public class ciclosAnidados {
+public class CiclosAnidados {
 //declarar todo
 
       public static void main(String[] args) {

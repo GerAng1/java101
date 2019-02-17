@@ -1,11 +1,11 @@
 /*****************************************
-// Tecnol�gico de Monterrey				//
-// Campus Santa Fe						//
-// Fundamentos de Programaci�n			//
-// "Condiciones con Switch"				//
-// Dr. Luis Y�pez P�rez					//
+// Tecnologico de Monterrey							//
+// Campus Santa Fe											//
+// Fundamentos de Programacion					//
+// "Condiciones con Switch"							//
+// Dr. Luis Yepez Perez									//
 // Gerardo Anglada de Landa - A01021917	//
-// 4/Sep/2017							//
+// 4/Sep/2017														//
 *****************************************/
 
 import java.util.Scanner;
@@ -31,5 +31,6 @@ public class Condiciones2{
 			default:
 				System.out.println("Esa opcion no existe");
 		}
+		
 	}
 }

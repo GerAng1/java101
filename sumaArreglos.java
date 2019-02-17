@@ -6,7 +6,7 @@
  * |******************************* */
 import java.util.*; //para importar la clase Scanner y poder usarlo
 
-public class sumaArreglos {
+public class SumaArreglos {
     static int cont=0, tam=0;
     static int arregloA[], arregloB[], arregloC[];
     static Scanner lectura = new Scanner(System.in);

@@ -4,12 +4,11 @@
  * | Gerardo Anglada - A01021917            |
  * | 12/01/2017                             |
  * |****************************************/
+
 import java.util.Scanner;
 
-public class triangulo {
-
+public class Triangulo {
 public static void main(String[] args) {
-//declarar todo lo que se utilizará
 Scanner lectura = new Scanner(System.in);
  int cont1=0, cont2=0;
  int tam=0;
@@ -25,5 +24,6 @@ Scanner lectura = new Scanner(System.in);
     }//termina for de altura
     System.out.println();//asi se saltan renglones
     }//termina for ancho
-    } //cierra metodo
+
+  } //cierra metodo main
 }//cierra clase

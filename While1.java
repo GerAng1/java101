@@ -1,11 +1,11 @@
 /*****************************************
-// Tecnológico de Monterrey				//
-// Campus Santa Fe						//
-// Fundamentos de Programación			//
-// "Condiciones con While"				//
-// Dr. Luis Yépez Pérez					//
+// Tecnologico de Monterrey							//
+// Campus Santa Fe											//
+// Fundamentos de Programacion					//
+// "Condiciones con While"							//
+// Dr. Luis Yepez Perez									//
 // Gerardo Anglada de Landa - A01021917	//
-// 9/Sep/2017							//
+// 9/Sep/2017														//
 *****************************************/
 import java.util.Scanner;
 

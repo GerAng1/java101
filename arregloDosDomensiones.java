@@ -6,20 +6,15 @@
  * |********************************/
  import java.util.*;
 
-public class arregloDosDomensiones {
-
+public class ArregloDosDomensiones {
     static Scanner lectura = new Scanner(System.in);
-
     //para el arreglo de dos dimensiones
     static int meses=12;
     static final int IMPORTAVENDE=2;
-
     //variables
     static int importe=0, mesImporte=0, venta=0, mesVenta=0;
-
     //arreglo
     static int [][] tabla= new int [meses][IMPORTAVENDE];
-
 
     public static void main(String[] args) {
         capturar();

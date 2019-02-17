@@ -6,7 +6,7 @@
  * |************************************************/
 import java.util.*;
 
-public class problemaCostosDeptos {
+public class ProblemaCostosDeptos {
 
     //captura datos globales
     static Scanner lectura = new Scanner(System.in);

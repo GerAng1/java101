@@ -1,31 +1,26 @@
 /*****************************************
-// Tecnol�gico de Monterrey				//
-// Campus Santa Fe						//
-// Fundamentos de Programaci�n			//
-// "Usando print con formato			//
-// Dr. Luis Y�pez P�rez					//
+// Tecnologico de Monterrey							//
+// Campus Santa Fe											//
+// Fundamentos de Programacion					//
+// "Usando print con formato						//
+// Dr. Luis Yepez Perez									//
 // Gerardo Anglada de Landa - A01021917	//
-// 28/Ago/2017							//
+// 28/Ago/2017													//
 *****************************************/
 import java.util.Scanner;
 
-public class MetodoUno {
+public class Metodos1 {
 	public static void main (String [] args){
 
 		Scanner lector = new Scanner (System.in);
 		String nombre = "Gerry";
 		int edad= 19;
 
-
-
 		System.out.print("Como te llamas?: ");
 		nombre=lector.nextLine();
 		System.out.print("Cuantos anos tienes? (en numeros porfa): ");
 		edad=lector.nextInt();
 		imprime(nombre, edad);
-
-
-
 	}//fin del main
 
 	public static void imprime(String nom, int num){

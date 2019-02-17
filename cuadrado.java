@@ -6,10 +6,9 @@
  * |****************************************/
 import java.util.*; //para importar la clase Scanner y poder usarlo
 
-public class cuadrado {
+public class Cuadrado {
 
 public static void main(String[] args) {
-//declarar todo lo que se utilizará
 Scanner lectura = new Scanner(System.in);
  int cont1=0, cont2=0;
  int tam=0;

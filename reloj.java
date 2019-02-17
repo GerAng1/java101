@@ -7,7 +7,7 @@
  * |******************************************/
 import java.util.Scanner;
 
-public class reloj {
+public class Reloj {
 
 public static void main (String[] args){
   int hora, min, seg = 0, numseg;

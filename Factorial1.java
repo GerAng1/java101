@@ -9,22 +9,23 @@
 *****************************************/
 import java.util.Scanner;
 
+
+//Calcular el factorial de un número leido desde el teclado.
+
 public class Factorial1 {
-/*
-Calcular el factorial de un número leido desde el teclado.
-*/
     public static void main(String[] args) {
         int cont=1,fin,total=1;
         Scanner lectura = new Scanner(System.in);
-       
+
         System.out.println("De que número quieres su factorial? ");
         fin=lectura.nextInt();
-        
+
         do{
             total*=cont;
             cont++;
         } while(cont<=fin);
+
         System.out.println("El factorial de " + fin + " es: "+ total);
+        
     }
-    
 }//fin de la clase

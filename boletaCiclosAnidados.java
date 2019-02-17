@@ -6,7 +6,7 @@
  * |***********************************/
 import java.util.*;
 
-public class boletaCiclosAnidados {
+public class BoletaCiclosAnidados {
 
 //seccion para declarar variables globales
  static final int MAT=3;
@@ -28,8 +28,6 @@ public class boletaCiclosAnidados {
     imprimeBoleta();
     }//cierre del main
 
-
-
 public static void imprimeBoleta(){
     //este metodo hace la impresion de la boleta
     //usando tanto el arreglo de los nombres
@@ -41,7 +39,6 @@ public static void imprimeBoleta(){
             System.out.print(boleta[cont1][cont2] + " ");
         }//este controla la cantidad de parciales que imprimir
         System.out.println();
-
     }//cierre del for que controla cuantas materias
 
 }//cierre del imprimeBoleta

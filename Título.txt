@@ -1,9 +1,0 @@
-/*****************************************
-// Tecnologico de Monterrey				//
-// Campus Santa Fe						//
-// Fundamentos de Programacion			//
-// “Tema”				//
-// Dr. Luis Yepez Perez					//
-// Gerardo Anglada de Landa - A01021917	//
-// dd/mm/aa							//
-*****************************************/

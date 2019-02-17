@@ -1,8 +1,12 @@
-public class Libro {
-    private String nombre, autor;
-    private int numPag;
+import java.util.ArrayList;
 
-    public Libro(String nombre, String autor, int numPag){
+public class Libro {
+    private String nombre;
+    //private ArrayList<Autor> listAutores = new ArrayList<Autor>();
+    private int numPag;
+    private Autor autor;
+
+    public Libro(String nombre, Autor autor, int numPag){
         this.nombre = nombre;
         this.autor = autor;
         this.numPag = numPag;
@@ -12,7 +16,7 @@ public class Libro {
         return nombre;
     }
     public String getAutor(){
-        return autor;
+        return (autor.getAp() + ", " + autor.getNom());
     }
     public int getNumPag(){
         return numPag;

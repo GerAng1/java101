@@ -5,28 +5,9 @@ public class Kindle {
     private ArrayList<Libro> listaLibros = new ArrayList<Libro>();
     private String added = "NO HAY", read = "NO HAY", erased = "NO HAY";
 
-    public void agregarLibro(){
-        Scanner lc = new Scanner(System.in);
-        Libro l;
-
-        String nombre, autor;
-        int numPag;
-
-        System.out.print("¿Nombre?: ");
-        nombre = lc.nextLine();
-        added = nombre;
-
-        System.out.print("¿Autor?: ");
-        autor = lc.nextLine();
-
-        System.out.println("¿Num. Pags.?: ");
-        numPag = lc.nextInt();
-        lc.nextLine();
-
-        l = new Libro(nombre, autor, numPag);
+    public void agregarLibro(Libro l, String added){
+        this.added = added;
         listaLibros.add(0, l);
-
-        System.out.println("Se ha agregado " + nombre + " a la lista.");
     }
 
     public void leerLibro(){

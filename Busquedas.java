@@ -29,51 +29,6 @@ public class Busquedas {
         return -1;
     }
 
-    public int mejorado2(int[] arr, int num){
-        String factString = "";
-        for(int i = 2; i < arr.length; i++){
-            if(arr.length % i == 0){
-                factString += Integer.toString(i) ;
-                factString+= ",";
-            }
-        }
-
-        String[] factarr = factString.split(",");
-
-        String number = factarr[factarr.length / 2];
-        int factor = Integer.parseInt(number);
-
-        for(int i = 0; i < arr.length; i += factor){
-            if(arr[i] == num)
-                return i;
-            else if (arr[i] > num){
-                for(int j = (i - (factor - 1)); j <= i; j++){
-                    if(arr[j] == num)
-                        return j;
-                    else if(j == i)
-                        return -1;
-                }
-            }
-        }
-        return -1;
-    }
-
-    /*public int factor(int size){
-        String factString = "";
-        for(int i = 2; i < size; i++){
-            if(size % i == 0){
-                factString += Integer.toString(i) ;
-                factString+= ",";
-            }
-        }
-
-        String[] factarr = factString.split(",");
-
-        String number = factarr[factarr.length / 2];
-        int mid = Integer.parseInt(number);
-        return mid;
-    }*/
-
     public int mejorado(int[] arr, int num){
         int size = (arr.length - 1);
         int skip = 1;
@@ -87,12 +42,12 @@ public class Busquedas {
 
         for(int i = 0; i < arr.length; i += skip){
             if(arr[i] == num)
-                return i;
+                return i + 1;
             else if (arr[i] > num){
                 int subarray = (i - (skip - 1));
                 for(int j = subarray; j <= i; j++){
                     if(arr[j] == num)
-                        return j;
+                        return j + 1;
                     else if(j == i)
                         return -1;
                 }
@@ -103,18 +58,16 @@ public class Busquedas {
 
     public int binario(int[] arr, int toFind){
         int first = 0, last = arr.length - 1, mid;
-        int cont = 0;
 
-        while (first <= last) {
+        for(int cont = 0; first <= last; cont++){
             mid = first + (last - first) / 2;
 
             if (arr[mid] == toFind)
-                return mid;
+                return mid + 1;
             else if (arr[mid] < toFind)
                 first = mid + 1;
             else
                 last = mid - 1;
-            cont += 1;
         }
         return -1;
     }
@@ -134,18 +87,17 @@ public class Busquedas {
         Busquedas b = new Busquedas();
         Scanner lectura = new Scanner(System.in);
 
-        long startTime, endTime, dur, dur2, dur3, dur4;
+        long startTime, endTime, dur, dur2, dur3;
         int toFind;
         int[] array = b.arregloAleatorio(1000);
 
-        System.out.print("Que numero deseas buscar? (0 - 1000): ");
+        System.out.print("Que numero deseas buscar? (0 - 2000): ");
         toFind = lectura.nextInt();
 
         System.out.println("El arreglo: ");
         b.print(array);
         System.out.println("");
 
-        System.out.println("");
         System.out.print("El num " + toFind + " esta en la posicion: ");
         startTime = System.nanoTime();
         System.out.println(b.secuencial(array, toFind) + ".");
@@ -160,27 +112,15 @@ public class Busquedas {
         endTime = System.nanoTime();
         dur2 = (endTime - startTime);
         System.out.println("Con mejorado: " + dur2 + " nanosegundos.");
-        System.out.println("Mejorado fue " + (dur - dur2) + " nsegundos mas rapido.");
-
-
-        System.out.println("");
-        System.out.print("El num " + toFind + " esta en la posicion: ");
-        startTime = System.nanoTime();
-        System.out.println(b.mejorado2(array, toFind) + ".");
-        endTime = System.nanoTime();
-        dur3 = (endTime - startTime);
-        System.out.println("Con mejorado2: " + dur3 + " nanosegundos.");
-        System.out.println("Mejorado2 fue " + (dur - dur3) + " nsegundos mas rapido.");
-
+        System.out.println("Mejorado fue " + (dur - dur2) + " nsegs mas rapido.");
 
         System.out.println("");
         System.out.print("El num " + toFind + " esta en la posicion: ");
         startTime = System.nanoTime();
         System.out.println(b.binario(array, toFind) + ".");
         endTime = System.nanoTime();
-        dur4 = (endTime - startTime);
-        System.out.println("Con binario: " + dur4 + " nanosegundos.");
-        System.out.println("Binario fue " + (dur - dur4) + " nsegundos mas rapido.");
-
+        dur3 = (endTime - startTime);
+        System.out.println("Con binario: " + dur3 + " nanosegundos.");
+        System.out.println("Binario fue " + (dur - dur3) + " nsegs mas rapido.");
     }
 }

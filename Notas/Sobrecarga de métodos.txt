@@ -1,3 +1,0 @@
-Sobrecarga de métodos
-
-Puedes declarar más de un método con el mismo método siempre y cuando tengan distintos conjuntos de parámetros (Diferente número de parámetros || tipo de parámetro || orden de ls parámetros).
